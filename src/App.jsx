@@ -52,11 +52,19 @@ function App() {
       </main>
       <footer>
         Made with {"❤️"} by Zeeshan Akhter {"|"}
-        <NavLink to="" target="_blank" title="Github link">
+        <NavLink
+          to="https://github.com/zeeshan-akhter/buzz-fitness-app"
+          target="_blank"
+          title="Github link"
+        >
           Github
         </NavLink>
         {" | "}
-        <NavLink to="" target="_blank" title="Replit link">
+        <NavLink
+          to="https://replit.com/@zeeshanakhter/buzzfitnesstrackerapi"
+          target="_blank"
+          title="Replit link"
+        >
           Replit
         </NavLink>
       </footer>
