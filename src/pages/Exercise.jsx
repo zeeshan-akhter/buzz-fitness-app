@@ -1,5 +1,5 @@
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics';
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
@@ -28,7 +28,7 @@ export default function Exercise() {
       <h1>
         <span>
           {" "}
-          Exercises <FitnessCenterIcon />
+          Exercises <SportsGymnasticsIcon fontSize="large" />
         </span>{" "}
         <button onClick={handleOpen}>Add New Exercise</button>
       </h1>

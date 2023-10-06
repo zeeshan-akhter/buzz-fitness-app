@@ -43,7 +43,7 @@ export const AddExerciseForm = ({ onClose}) => {
           type="text"
           name="name"
           id=""
-          placeholder="Pull ups"
+          placeholder="name of your exercise"
           value={formData.name}
           onChange={handleformInput}
           required

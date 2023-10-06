@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { FoodForm } from "../components/FoodForm";
 import { getFoods, deleteFood } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
 import { Loader } from "../components/Loader";
 
 export default function Foods() {
@@ -23,7 +22,7 @@ export default function Foods() {
     <div>
       <h1>
         <span>
-          Daily Calorie intake <FastfoodIcon />
+          Calorie intake {"🥗"}
         </span>
         <button onClick={handleOpen}>Add New Food</button>
       </h1>

@@ -11,7 +11,7 @@ export const addFoodDataService =async(foodData) =>{
       redirect: 'follow'
     };
 
-    const response = await fetch("https://fitnesstracker.anushkajaiswal7.repl.co/foods", requestOptions);
+    const response = await fetch("https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods", requestOptions);
     if (response) {
       const data = await response.json()
       return data;
@@ -28,7 +28,7 @@ export const getFoodsService = async () => {
       redirect: "follow",
     };
     const response = await fetch(
-      "https://fitnesstracker.anushkajaiswal7.repl.co/foods",
+      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods",
       requestOptions
     );
 
@@ -49,7 +49,7 @@ export const deleteFoodService = async (id) => {
       redirect: "follow",
     };
     const response = await fetch(
-      `https://fitnesstracker.anushkajaiswal7.repl.co/foods/${id}`,
+      `https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods/${id}`,
       requestOptions
     );
 

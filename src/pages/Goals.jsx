@@ -1,6 +1,4 @@
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import TrackChangesIcon from "@mui/icons-material/TrackChanges";
-
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { useEffect, useState } from "react";
@@ -9,7 +7,7 @@ import { GoalsForm } from "../components/GoalForm";
 import { deleteGoal, getGoals } from "../redux/actions";
 import { boxStyle } from "../utils/constants";
 import { Loader } from "../components/Loader";
-import createDate from '../utils/ultilityFunctions.js'
+import createDate from "../utils/ultilityFunctions.js";
 export default function Goals() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -23,7 +21,8 @@ export default function Goals() {
   return (
     <div>
       <h1>
-        <span>Goals <TrackChangesIcon /></span> <button onClick={handleOpen}>Add New Goal</button>{" "}
+        <span>Goals {"🎯"}</span>{" "}
+        <button onClick={handleOpen}>Add New Goal</button>{" "}
       </h1>
       {loading && <Loader />}
       {!loading && (
@@ -51,7 +50,7 @@ export default function Goals() {
 }
 
 function TargetBox({ obj, dispatch }) {
-  const date = createDate(obj?.targetDate)
+  const date = createDate(obj?.targetDate);
   return (
     <div className="containerBox" key={obj._id}>
       <h2>

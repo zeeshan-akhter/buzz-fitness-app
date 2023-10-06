@@ -11,7 +11,7 @@ export const addGoalDataService =async(goalData) =>{
       redirect: 'follow'
     };
 
-    const response = await fetch("https://fitnesstracker.anushkajaiswal7.repl.co/goals", requestOptions);
+    const response = await fetch("https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/goals", requestOptions);
     if (response) {
       const data = await response.json()
       return data;
@@ -28,7 +28,7 @@ export const getGoalService = async () => {
       redirect: "follow",
     };
     const response = await fetch(
-      "https://fitnesstracker.anushkajaiswal7.repl.co/goals",
+      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/goals",
       requestOptions
     );
     if (response) {
@@ -48,7 +48,7 @@ export const deleteGoalService = async (id) => {
       redirect: "follow",
     };
     const response = await fetch(
-      `https://fitnesstracker.anushkajaiswal7.repl.co/goals/${id}`,
+      `https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/goals/${id}`,
       requestOptions
     );
 

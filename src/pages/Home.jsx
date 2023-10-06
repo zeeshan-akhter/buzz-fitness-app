@@ -1,7 +1,3 @@
-import RestaurantIcon from "@mui/icons-material/Restaurant";
-import SportsMartialArtsIcon from "@mui/icons-material/SportsMartialArts";
-import TrackChangesIcon from "@mui/icons-material/TrackChanges";
-import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Loader } from "../components/Loader";
@@ -39,22 +35,20 @@ export default function Home() {
       {!loading && (
         <div className="dashboard">
           <div className="containerBox">
-            <RestaurantIcon />
+            <div className="emoji">{"🥗"}</div>
             <h3>Total Calories intake : {totalCaloriesConsumed}</h3>
           </div>
           <div className="containerBox">
-            <WhatshotIcon />
+          <div className="emoji">{"🔥"}</div>
             <h3>Total Calories burned : {caloriesBurned}</h3>
           </div>
 
           <div className="containerBox">
-            {" "}
-            <TrackChangesIcon />
+          <div className="emoji">{"🎯"}</div>
             <h3>Total Calories Goal : {totalCaloriesGoal}</h3>
           </div>
           <div className="containerBox">
-            {" "}
-            <SportsMartialArtsIcon />
+          <div className="emoji">{"🏋️"}</div>
             <h3>
               Total Calories remaining :{" "}
               {totalCaloriesGoal + totalCaloriesConsumed - caloriesBurned}

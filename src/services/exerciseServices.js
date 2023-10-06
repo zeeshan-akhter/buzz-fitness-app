@@ -11,7 +11,7 @@ export const addExerciseDataService = async (exData) => {
     };
 
     const response = await fetch(
-      "https://fitnesstracker.anushkajaiswal7.repl.co/exercises",
+      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/exercises",
       requestOptions
     );
     if (response) {
@@ -30,7 +30,7 @@ export const getExercisesService = async () => {
       redirect: "follow",
     };
     const response = await fetch(
-      "https://fitnesstracker.anushkajaiswal7.repl.co/exercises",
+      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/exercises",
       requestOptions
     );
 
@@ -52,7 +52,7 @@ export const deleteExerciseService = async (id) => {
       redirect: "follow",
     };
     const response = await fetch(
-      `https://fitnesstracker.anushkajaiswal7.repl.co/exercises/${id}`,
+      `https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/exercises/${id}`,
       requestOptions
     );
 

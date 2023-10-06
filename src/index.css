@@ -7,8 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  --primary-color:#39ff14;
-  --secondary-color:#21aa63;
+  --primary-color:#ff0000;
+  --secondary-color:#000000;
 }
 ::selection{
   background-color: var(--primary-color);
