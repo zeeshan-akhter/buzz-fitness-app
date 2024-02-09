@@ -30,7 +30,7 @@ export const getExercisesService = async () => {
       redirect: "follow",
     };
     const response = await fetch(
-      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/exercises",
+      "https://c6e52d79-2c4a-4af8-a684-4ef222a5706f-00-2szbxdyspxocm.kirk.replit.dev/exercises",
       requestOptions
     );
 
@@ -52,7 +52,7 @@ export const deleteExerciseService = async (id) => {
       redirect: "follow",
     };
     const response = await fetch(
-      `https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/exercises/${id}`,
+      `https://c6e52d79-2c4a-4af8-a684-4ef222a5706f-00-2szbxdyspxocm.kirk.replit.dev/exercises/${id}`,
       requestOptions
     );
 

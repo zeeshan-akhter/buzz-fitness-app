@@ -1,26 +1,27 @@
 let myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-
-export const addFoodDataService =async(foodData) =>{
+export const addFoodDataService = async (foodData) => {
   try {
     var requestOptions = {
-      method: 'POST',
+      method: "POST",
       headers: myHeaders,
       body: JSON.stringify(foodData),
-      redirect: 'follow'
+      redirect: "follow",
     };
 
-    const response = await fetch("https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods", requestOptions);
+    const response = await fetch(
+      "https://c6e52d79-2c4a-4af8-a684-4ef222a5706f-00-2szbxdyspxocm.kirk.replit.dev/foods",
+      requestOptions
+    );
     if (response) {
-      const data = await response.json()
+      const data = await response.json();
       return data;
-    }
-    else console.log("something is wrong in adding the data")
+    } else console.log("something is wrong in adding the data");
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 export const getFoodsService = async () => {
   try {
     const requestOptions = {
@@ -28,7 +29,7 @@ export const getFoodsService = async () => {
       redirect: "follow",
     };
     const response = await fetch(
-      "https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods",
+      "https://c6e52d79-2c4a-4af8-a684-4ef222a5706f-00-2szbxdyspxocm.kirk.replit.dev/foods",
       requestOptions
     );
 
@@ -49,7 +50,7 @@ export const deleteFoodService = async (id) => {
       redirect: "follow",
     };
     const response = await fetch(
-      `https://buzzfitnesstrackerapi.zeeshanakhter.repl.co/foods/${id}`,
+      `https://c6e52d79-2c4a-4af8-a684-4ef222a5706f-00-2szbxdyspxocm.kirk.replit.dev/foods/${id}`,
       requestOptions
     );
 
